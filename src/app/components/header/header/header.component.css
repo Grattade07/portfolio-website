@@ -1,0 +1,24 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-bottom: 4px solid #DBE550;
+}
+
+#webpage-icon {
+    margin-bottom: 5px;
+}
+
+* {
+    color: #DBE550;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a:hover {
+    color: white;
+}
