@@ -9,3 +9,8 @@
 .flex-gap-20 {
     gap: 20px;
 }
+
+* {
+    color: #cd9a32;
+    font-size: 25px;
+}
