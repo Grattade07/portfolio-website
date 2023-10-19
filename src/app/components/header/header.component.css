@@ -2,23 +2,16 @@
     display: flex;
     justify-content: space-around;
     padding: 0 15px;
-    border-bottom: 4px solid #cd9a32;
+    border-bottom: 4px solid #efef2a;
 }
 
 #webpage-icon {
     margin-bottom: 5px;
+    color: #efef2a !important;
 }
 
-
-
-a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-    color: #cd9a32;
-}
-
-a:hover {
-    color: white;
-    text-decoration: underline;
+#webpage-icon {
+    * {
+        color: #efef2a !important;
+    }
 }
