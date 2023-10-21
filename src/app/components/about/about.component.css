@@ -18,3 +18,20 @@ a:hover {
     color: #efef2a;
 }
 
+.icon-figure {
+    width: 80px;
+}
+
+figcaption {
+    font-size: 18px;
+    text-align: center;
+}
+
+#tech-proficiencies-container {
+    width: 100%;
+}
+
+#tech-prof-icons-container {
+    display: flex;
+    justify-content: space-between;
+}
