@@ -5,6 +5,9 @@
 .card {
     --bs-card-bg: black;
     --bs-card-border-color: var(--secondary-color);
+    --bs-card-border-width: 3px;
+    box-shadow: 8px 10px 11px 1px rgba(239,239,42,0.6);;
+    width: 350px
 }
 
 .card-title {
@@ -16,6 +19,12 @@
 .card-text {
     font-size: 16px;
     color: white;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-button-container {
@@ -35,5 +44,6 @@ img {
 }
 
 .btn-secondary {
-    --bs-btn-border-color: var(--secondary-color)
+    --bs-btn-border-color: var(--secondary-color);
+    --bs-btn-hover-border-color: var(--secondary-color);
 }
