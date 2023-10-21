@@ -4,10 +4,10 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: '/'},
-  {path: '', component: AboutComponent, data: {animation: '*'}},
-  {path: 'projects', component: ProjectsComponent},
-  {path:'**', component: AboutComponent}
+  {path: '', pathMatch: 'full', redirectTo: 'about'},
+  {path: 'about', component: AboutComponent, data: {state: 'about'}},
+  {path: 'projects', component: ProjectsComponent, data: {state: 'projects'}},
+  {path:'**', redirectTo: 'about', pathMatch: 'full'}
 ];
 
 @NgModule({

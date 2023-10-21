@@ -17,7 +17,6 @@ export class AppComponent {
 
   changeRoute(outlet: RouterOutlet)
   {
-    console.log(outlet.activatedRouteData)
-    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation']
+    return outlet.activatedRouteData['state']
   }
 }
