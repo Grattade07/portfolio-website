@@ -1,31 +1,50 @@
 <section id="about" class="flex container-md">
-    <div>
-        <p id="about-name">
-            Hello, My Name Is <span><strong id="name" style="color: #efef2a;">Joe Woodcock</strong> </span>
-        </p>
-        <p id="about-description">
-            I am a software engineer specialising in frontend development.
-            <br>
-            I enjoy tackling problems, and collaborating to create responsive applications and provide a positive user experience.
-            <br>
-            I am currently focused on building intuitive applications at Cordic.
-        </p>
+  <div class="mb-3">
+    <p id="about-name">
+      Hello, My Name Is
+      <span
+        ><strong id="name" style="color: #efef2a">Joe Woodcock</strong>
+      </span>
+    </p>
+    <p id="about-description">
+      I am a self-taught software engineer specialising in frontend development.
+      <br />
+      Having initially spent time learning the basics of programming on my own,
+      I quickly discovered my passion for the subject and enrolled in a bootcamp
+      to further my learning and then completed my journey to begin a career in
+      tech. 
+    </p>
+    <p>
+        I am always looking to further my own learning through exposure to
+          new concepts and technologies.
+          <br />
+          I enjoy tackling problems, and collaborating to create responsive webpages
+          and provide a positive user experience.
+          <br />
+          I am currently working on building intuitive applications at Cordic.
+
+    </p>
+   
+  </div>
+
+  <button class="btn btn-primary mb-3">
+    <a href="/assets/cv/Joe-Woodcock-CV.pdf" download>Download my CV</a>
+  </button>
+
+  <div id="tech-proficiencies-container">
+    <div id="tech-prof-header">
+      <h4>Experienced In:</h4>
     </div>
 
-    <button class="btn btn-primary">
-        <a href="/assets/cv/Joe-Woodcock-CV.pdf" download>Download my CV</a>
-    </button>
-
-    <div id="tech-proficiencies-container">
-        <div id="tech-prof-header">
-            <h4>Experienced In:</h4>
-        </div>
-
-        <div id="tech-prof-icons-container">
-            <figure *ngFor="let tech of technologies" class="icon-figure">
-                <img [src]="tech.iconURL" alt="{{tech.caption}} Icon" class="img-fluid">
-                <figcaption>{{tech.caption}}</figcaption>
-            </figure>
-        </div>
+    <div id="tech-prof-icons-container">
+      <figure *ngFor="let tech of technologies" class="icon-figure">
+        <img
+          [src]="tech.iconURL"
+          alt="{{ tech.caption }} Icon"
+          class="img-fluid"
+        />
+        <figcaption>{{ tech.caption }}</figcaption>
+      </figure>
     </div>
+  </div>
 </section>

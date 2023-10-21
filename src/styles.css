@@ -1,61 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root {
-    --secondary-color: #efef2a;
+  --secondary-color: #efef2a;
 }
 
 @font-face {
-    font-family: 'Varela Round';
-    src: url('/assets/fonts/Varela Round/VarelaRound-Regular.ttf');
+  font-family: "Varela Round";
+  src: url("/assets/fonts/Varela Round/VarelaRound-Regular.ttf");
 }
 
-
-
 body {
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
 .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-gap-20 {
-    gap: 20px;
+  gap: 20px;
 }
 
 .row {
-    width: 100%;
-    justify-content: space-around;
+  width: 100%;
+  justify-content: space-around;
 }
 
 a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--secondary-color);
 }
 
 a:hover {
-    color: white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
 * {
-    /* color: white; */
-    font-size: 25px;
-    font-family: 'Varela Round';
+  /* color: white; */
+  font-size: 25px;
+  font-family: "Varela Round";
 }
 
 main {
-    color: white;
+  color: white;
 }
 
 .btn-primary {
-    --bs-btn-bg: #111214;
-    --bs-btn-hover-bg: #2c2e32;;
-    --bs-btn-border-color: var(--secondary-color);
-    --bs-btn-hover-border-color:  #ffe710;
+  --bs-btn-bg: #111214;
+  --bs-btn-hover-bg: #2c2e32;
+  --bs-btn-border-color: var(--secondary-color);
+  --bs-btn-hover-border-color: #ffe710;
 }
+
+@media (max-width: 1200px) {
+  * {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  * {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+    * {
+      font-size: 16px;
+    }
+  }
