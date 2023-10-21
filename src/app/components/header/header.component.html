@@ -1,14 +1,52 @@
 <header id="header">
-    <div class="flex flex-gap-20">
-        <fa-icon [icon]="faGlobe" [size]="'2xl'" [styles]="{color: '#efef2a' }" id="webpage-icon"></fa-icon>
-        <h1 style="color: #efef2a;">JW</h1>
-    </div>
+  <div class="flex flex-gap-20">
+    <fa-icon
+      [icon]="faGlobe"
+      [size]="'2xl'"
+      [styles]="{ color: '#efef2a' }"
+      id="webpage-icon"
+    ></fa-icon>
+    <h1 style="color: #efef2a">JW</h1>
+  </div>
 
-    <div class="flex">
-        <nav class="flex flex-gap-20" id="nav-links">
-            <a  routerLink="/about" routerLinkActive="active">About</a>
-            <a routerLink="/projects" routerLinkActive="active">Projects</a>
-            <a routerLink="/contact" routerLinkActive="active">Contact</a>
-        </nav>
+  <div class="flex" *ngIf="innerWidth >= 576">
+    <nav class="flex flex-gap-20" id="nav-links">
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/projects" routerLinkActive="active">Projects</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </nav>
+  </div>
+
+  <div ngbDropdown class="d-inline-block" *ngIf="innerWidth < 576">
+    <button type="button" class="btn" ngbDropdownToggle>
+      <fa-icon
+        [icon]="faHamMenu"
+        [styles]="{ color: '#efef2a' }"
+        [size]="'lg'"
+      ></fa-icon>
+    </button>
+    <div
+      ngbDropdownMenu
+      aria-labelledby="dropdownBasic1"
+      class="dropdown-menu-end"
+    >
+      <ul id="nav-dropdown-list">
+        <li>
+          <a routerLink="/about" routerLinkActive="active" ngbDropdownItem
+            >About</a
+          >
+        </li>
+        <li>
+          <a routerLink="/projects" routerLinkActive="active" ngbDropdownItem
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a routerLink="/contact" routerLinkActive="active" ngbDropdownItem
+            >Contact</a
+          >
+        </li>
+      </ul>
     </div>
+  </div>
 </header>

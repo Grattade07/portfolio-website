@@ -1,17 +1,35 @@
 #header {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 15px;
-    border-bottom: 4px solid #efef2a;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 15px;
+  border-bottom: 4px solid #efef2a;
 }
 
 #webpage-icon {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
+  color: #efef2a !important;
+}
+
+#webpage-icon {
+  * {
     color: #efef2a !important;
+  }
 }
 
-#webpage-icon {
-    * {
-        color: #efef2a !important;
-    }
+#nav-dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-item {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.dropdown-menu {
+  --bs-dropdown-padding-x: 1rem;
+  --bs-dropdown-bg: #111214;
+  --bs-dropdown-border-color: var(--secondary-color);
 }
