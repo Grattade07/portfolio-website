@@ -1,9 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --secondary-color: #efef2a;
+}
+
 @font-face {
     font-family: 'Varela Round';
     src: url('/assets/fonts/Varela Round/VarelaRound-Regular.ttf');
 }
+
+
 
 body {
     height: 100vh;
@@ -20,11 +26,16 @@ body {
     gap: 20px;
 }
 
+.row {
+    width: 100%;
+    justify-content: space-around;
+}
+
 a {
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
-    color: #efef2a;
+    color: var(--secondary-color);
 }
 
 a:hover {
@@ -45,6 +56,6 @@ main {
 .btn-primary {
     --bs-btn-bg: #111214;
     --bs-btn-hover-bg: #2c2e32;;
-    --bs-btn-border-color: #efef2a;
+    --bs-btn-border-color: var(--secondary-color);
     --bs-btn-hover-border-color:  #ffe710;
 }

@@ -1,0 +1,39 @@
+#projects {
+    height: 100%;
+}
+
+.card {
+    --bs-card-bg: black;
+    --bs-card-border-color: var(--secondary-color);
+}
+
+.card-title {
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+.card-text {
+    font-size: 16px;
+    color: white;
+}
+
+.card-button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    font-size: 14px;
+}
+
+img {
+    margin: 0 -0.75rem;
+    border-radius: 0.375rem 0.375rem 0 0;
+    border-bottom : 3px solid var(--secondary-color)
+}
+
+.btn-secondary {
+    --bs-btn-border-color: var(--secondary-color)
+}

@@ -1,5 +1,4 @@
-section {
-    width: 100%;
+#about {
     height: 100%;
     flex-direction: column;
     padding:  0 10%
