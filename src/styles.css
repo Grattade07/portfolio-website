@@ -5,6 +5,11 @@
     src: url('/assets/fonts/Varela Round/VarelaRound-Regular.ttf');
 }
 
+body {
+    height: 100vh;
+    width: 100%;
+}
+
 .flex {
     display: flex;
     justify-content: center;
