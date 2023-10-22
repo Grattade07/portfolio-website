@@ -1,25 +1,30 @@
 <section id="projects" class="flex container-md">
-    <div class="row">
-        <div class="card" *ngFor="let project of projects">
-           <img src="{{project.previewImgPath}}" alt="{{project.projectName}} Image Preview">
-           <div class="card-body">
-            <div class="mb-3">
-                <h5 class="card-title">
-                    {{project.projectName}}
-                </h5>
-                <p class="card-text">
-                    {{project.projectDescription}}
-                </p>
-            </div>
-            <div class="card-button-container">
-                <button class="btn btn-primary">
-                    <a href="{{project.projectSourceURL}}"  target="_blank">See Code</a>
-                </button>
-                <button class="btn btn-secondary">
-                    <a href="{{project.projectHostURL}}" target="_blank">Webpage</a>
-                </button>
-            </div>
-           </div>
+  <div class="row">
+    <div class="card expand-hover" *ngFor="let project of projects">
+      <img
+        src="{{ project.previewImgPath }}"
+        alt="{{ project.projectName }} Image Preview"
+      />
+      <div class="card-body">
+        <div class="mb-3">
+          <h5 class="card-title">
+            {{ project.projectName }}
+          </h5>
+          <p class="card-text">
+            {{ project.projectDescription }}
+          </p>
         </div>
+        <div class="card-button-container">
+          <button class="btn btn-primary">
+            <a href="{{ project.projectSourceURL }}" target="_blank"
+              >See Code</a
+            >
+          </button>
+          <button class="btn btn-secondary">
+            <a href="{{ project.projectHostURL }}" target="_blank">Webpage</a>
+          </button>
+        </div>
+      </div>
     </div>
-    </section>
+  </div>
+</section>

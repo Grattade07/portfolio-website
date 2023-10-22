@@ -13,7 +13,6 @@ import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
 export class HeaderComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onResize(event?: any) {
-    console.log(this.innerWidth);
     this.innerWidth = window.innerWidth;
   }
 

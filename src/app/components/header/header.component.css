@@ -3,6 +3,7 @@
   justify-content: space-around;
   padding: 0 15px;
   border-bottom: 4px solid #efef2a;
+  max-height: 80px;
 }
 
 #webpage-icon {
