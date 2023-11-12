@@ -1,83 +1,80 @@
 #about {
-    height: 100%;
-    flex-direction: column;
-    padding:  0 10%
+  height: 100%;
+  flex-direction: column;
+  padding: 0 10%;
 }
 
 #about-name {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 #name {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 a:hover {
-    text-decoration: none;
-    color: #efef2a;
+  text-decoration: none;
+  color: #efef2a;
 }
 
 .icon-figure {
-    width: 80px;
+  width: 80px;
 }
 
 figcaption {
-    font-size: 18px;
-    text-align: center;
+  font-size: 18px;
+  text-align: center;
 }
 
 #tech-proficiencies-container {
-    width: 100%;
+  width: 100%;
 }
 
 #tech-prof-icons-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    column-gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 10px;
 }
 
 @media (max-width: 1200px) {
-    .icon-figure {
-        width: 70px
-    }
-
-    figcaption {
-        font-size: 15px;
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .icon-figure {
-      width: 100%
+  .icon-figure {
+    width: 70px;
   }
 
-    #tech-prof-icons-container {
-        display: grid;
-        justify-content: space-between;
-        justify-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(70px, 90px));
-        column-gap: 10px;
-    }
-    
+  figcaption {
+    font-size: 15px;
   }
-  
-  @media (max-width: 768px) {
-    #tech-prof-icons-container {
-       
-        grid-template-columns: repeat(auto-fit, minmax(60px, 80px));
-        
-    }
+}
+
+@media (max-width: 992px) {
+  .icon-figure {
+    width: 100%;
   }
 
-  @media (max-width: 620px) {
-    #name {
-      font-size: 2rem;
-    }
+  #tech-prof-icons-container {
+    display: grid;
+    justify-content: space-between;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 70px));
+    column-gap: 10px;
   }
+}
 
-  @media (max-width: 576px) {
-    #tech-prof-icons-container {
-      grid-template-columns: repeat(auto-fit, minmax(50px, 70px));
-    }
+@media (max-width: 768px) {
+  #tech-prof-icons-container {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 65px));
   }
+}
+
+@media (max-width: 620px) {
+  #name {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #tech-prof-icons-container {
+    grid-template-columns: repeat(auto-fit, minmax(45px, 60px));
+  }
+}
